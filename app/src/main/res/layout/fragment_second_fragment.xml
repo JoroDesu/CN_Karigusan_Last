@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="50"
+                app:iss_delay="2000"
+                app:iss_period="2000"
+                app:iss_text_align="CENTER" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="5dp"
+                android:autoLink="web"
+                android:background="@drawable/oval3"
+                android:gravity="left"
+                android:padding="20dp"
+                android:text="sample"
+                android:textColor="@color/black"
+                android:textColorLink="@color/green" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/favButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/fav_button"
+        android:onClick="favmethod" />
+
+</RelativeLayout>
